@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [mfg_rpt_user]
+    WITH PASSWORD = N'nm>i0bbrwcSdYcuys9DqKxd@msFT7_&#$!~<w0w0|adoH{E~', SID = 0xD52CF15E2689D8448BD15137567A49C0, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

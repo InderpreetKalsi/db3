@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[mpOrderManagement] (
+    [Id]                INT              IDENTITY (100000, 1) NOT NULL,
+    [TransactionId]     UNIQUEIDENTIFIER CONSTRAINT [DF__mpOrderMa__Trans__054E331D] DEFAULT (newid()) NULL,
+    [RfqId]             INT              NOT NULL,
+    [RfqEncryptedId]    VARCHAR (100)    NULL,
+    [ReshapeUniqueId]   UNIQUEIDENTIFIER NULL,
+    [PONumber]          VARCHAR (100)    NOT NULL,
+    [PODate]            DATETIME         NULL,
+    [IsMfgStandardPO]   BIT              CONSTRAINT [DF_IsMfgStandardPO] DEFAULT ((0)) NULL,
+    [POStatus]          VARCHAR (100)    CONSTRAINT [DF_POStatus] DEFAULT ('Pending') NULL,
+    [FileId]            INT              NULL,
+    [SupplierContactId] INT              NULL,
+    [CreatedOn]         DATETIME         CONSTRAINT [DF_CreatedOn] DEFAULT (getutcdate()) NULL,
+    [ModifiedBy]        INT              NULL,
+    [ModifiedDate]      DATETIME         NULL,
+    [IsDeleted]         BIT              CONSTRAINT [OM_DF_IsDeleted] DEFAULT ((0)) NULL,
+    [ShippingAddressId] INT              NULL,
+    [PaymentTerm]       VARCHAR (150)    NULL,
+    [Reason]            NVARCHAR (4000)  NULL,
+    [IsOrderReceived]   BIT              DEFAULT ((0)) NULL,
+    [IsPartCompleted]   BIT              DEFAULT ((0)) NULL,
+    [Notes]             NVARCHAR (4000)  NULL,
+    CONSTRAINT [PK_Id] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_mpOrderManagement_mp_special_files1] FOREIGN KEY ([FileId]) REFERENCES [dbo].[mp_special_files] ([FILE_ID])
+);
+

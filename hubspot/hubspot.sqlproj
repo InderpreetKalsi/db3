@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>hubspot</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{cc4e9318-3b89-47be-9599-f0410afb89d9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>hubspot</RootNamespace>
+    <AssemblyName>hubspot</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>D:\E-Drive\Project MFG\mfg_db_project\mfg_db\hubspot\sql-scripts\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="sql-scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\HubSpotContactsDownSyncLogs.sql" />
+    <Build Include="dbo\Tables\HubSpotCompaniesDownSyncLogs.sql" />
+    <Build Include="dbo\Tables\HubSpotContactsCreatedOrUpdatedLogs.sql" />
+    <Build Include="dbo\Tables\hubspot_sync_logs.sql" />
+    <Build Include="dbo\Tables\mst_manager_bk_duplicate_records.sql" />
+    <Build Include="dbo\Tables\HubSpotUpSyncAPIRequestResponseLogs.sql" />
+    <Build Include="dbo\Tables\HubSpotContacts.sql" />
+    <Build Include="dbo\Tables\HubSpotContactsOneTimePull.sql" />
+    <Build Include="dbo\Tables\hubspot_mst_territory_classification.sql" />
+    <Build Include="dbo\Tables\MarketplaceToHubSpotContactCompaniesCreateLogs.sql" />
+    <Build Include="dbo\Tables\hubspot_mst_rfq_buyerStatus.sql" />
+    <Build Include="dbo\Tables\MarketplaceToHubSpotContactCompaniesLogs.sql" />
+    <Build Include="dbo\Tables\hubspot_mst_rfq_UserStatus.sql" />
+    <Build Include="dbo\Tables\HubSpotErrorLogPushContacts.sql" />
+    <Build Include="dbo\Tables\HubSpotErrorLogPushCompanies.sql" />
+    <Build Include="dbo\Tables\HubSpotRFQs_rk.sql" />
+    <Build Include="dbo\Tables\HubSpotContactsOneTimePull_Dec232021.sql" />
+    <Build Include="dbo\Tables\t1.sql" />
+    <Build Include="dbo\Tables\b2.sql" />
+    <Build Include="dbo\Tables\mst_manufacturing_location.sql" />
+    <Build Include="dbo\Tables\mst_manager.sql" />
+    <Build Include="dbo\Tables\mst_discipline_level0.sql" />
+    <Build Include="dbo\Tables\mst_discipline_level1.sql" />
+    <Build Include="dbo\Tables\HubSpotCompanies.sql" />
+    <Build Include="dbo\Tables\%27portal 7872785_%27.sql" />
+    <Build Include="dbo\Tables\HubSpotRFQs.sql" />
+    <Build Include="dbo\Tables\HubSpotContactsUpdateLogs.sql" />
+    <Build Include="dbo\Tables\HubSpotCompaniesUpdateLogs.sql" />
+    <Build Include="dbo\Tables\HubSpotAllEmails_20220225.sql" />
+    <Build Include="dbo\Tables\bk_hubspotcompanies_16_may_2023.sql" />
+    <Build Include="Security\mfg_prod.sql" />
+    <Build Include="Security\mfg_prod_1.sql" />
+    <Build Include="Security\mfg_app_user.sql" />
+    <Build Include="Security\mfg_app_user_1.sql" />
+    <Build Include="Security\rkarpe%40delaPlex.com.sql" />
+    <Build Include="Security\rkarpe%40delaPlex_1.com.sql" />
+    <Build Include="Security\mfg_rpt_user.sql" />
+    <Build Include="Security\mfg_rpt_user_1.sql" />
+    <Build Include="Security\lchen%40shapeways.com.sql" />
+    <Build Include="Security\lchen%40shapeways_1.com.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\proc_set_HubSpotContactsCreatedOrUpdatedLogs.sql" />
+    <Build Include="dbo\Stored Procedures\proc_set_HubSpotContactsCreatedOrUpdatedLogs_bk_18_Aug_2023.sql" />
+    <Build Include="dbo\Stored Procedures\CREATEMODEL.sql" />
+  </ItemGroup>
+</Project>

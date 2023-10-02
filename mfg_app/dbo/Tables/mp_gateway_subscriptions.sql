@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[mp_gateway_subscriptions] (
+    [id]                        INT            IDENTITY (1001, 1) NOT NULL,
+    [subscription_id]           VARCHAR (250)  NOT NULL,
+    [customer_id]               INT            NOT NULL,
+    [plan_id]                   INT            NOT NULL,
+    [created_at]                DATETIME       NULL,
+    [next_billing_at]           DATETIME       NULL,
+    [subscription_start]        DATETIME       NULL,
+    [subscription_end]          DATETIME       NULL,
+    [status]                    VARCHAR (250)  NULL,
+    [created]                   DATETIME       CONSTRAINT [DF_mp_gateway_subscriptions_created] DEFAULT (getutcdate()) NULL,
+    [modified]                  DATETIME       NULL,
+    [addon]                     VARCHAR (250)  NULL,
+    [addon_quantity]            SMALLINT       NULL,
+    [zcrm_account_id]           BIGINT         NULL,
+    [reference_id]              NVARCHAR (250) NULL,
+    [PaymentStatus]             VARCHAR (250)  NULL,
+    [SessionStatus]             VARCHAR (250)  NULL,
+    [TotalAmout]                BIGINT         NULL,
+    [SubscriptionInterval]      VARCHAR (250)  NULL,
+    [SubscriptionIntervalCount] INT            NULL,
+    [InvoiceId]                 VARCHAR (250)  NULL,
+    [RequestType]               VARCHAR (50)   NULL,
+    CONSTRAINT [PK_mp_gateway_subscriptions_id] PRIMARY KEY CLUSTERED ([id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_mp_gateway_subscriptions_mp_gateway_subscription_customers] FOREIGN KEY ([customer_id]) REFERENCES [dbo].[mp_gateway_subscription_customers] ([id]) ON DELETE CASCADE ON UPDATE CASCADE
+);
+

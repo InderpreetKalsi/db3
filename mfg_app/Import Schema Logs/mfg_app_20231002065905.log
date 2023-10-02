@@ -1,0 +1,86 @@
+2023-10-02 12:29:05 PM	This log contains information about the import schema operation into project 'mfg_app' on computer 'DPLAP_150' by user 'InderpreetKalsi'.
+2023-10-02 12:29:06 PM	Import of database schema has started.
+2023-10-02 12:29:33 PM	Gathering database credentials
+2023-10-02 12:29:33 PM	Gathering database options
+2023-10-02 12:29:33 PM	Gathering generic database scoped configuration option
+2023-10-02 12:29:33 PM	Gathering users
+2023-10-02 12:29:33 PM	Gathering roles
+2023-10-02 12:29:33 PM	Gathering application roles
+2023-10-02 12:29:33 PM	Gathering role memberships
+2023-10-02 12:29:33 PM	Gathering filegroups
+2023-10-02 12:29:33 PM	Gathering full-text catalogs
+2023-10-02 12:29:33 PM	Gathering assemblies
+2023-10-02 12:29:33 PM	Gathering certificates
+2023-10-02 12:29:33 PM	Gathering asymmetric keys
+2023-10-02 12:29:33 PM	Gathering symmetric keys
+2023-10-02 12:29:33 PM	Gathering encrypted symmetric keys
+2023-10-02 12:29:33 PM	Gathering schemas
+2023-10-02 12:29:33 PM	Gathering XML schema collections
+2023-10-02 12:29:33 PM	Gathering user-defined data types
+2023-10-02 12:29:33 PM	Gathering user-defined types
+2023-10-02 12:29:33 PM	Gathering table types
+2023-10-02 12:29:34 PM	Gathering unique keys for table types
+2023-10-02 12:29:34 PM	Gathering primary keys for table types
+2023-10-02 12:29:34 PM	Gathering indexes for table types
+2023-10-02 12:29:34 PM	Gathering check constraints for table types
+2023-10-02 12:29:34 PM	Gathering default constraints for table types
+2023-10-02 12:29:34 PM	Gathering partition functions
+2023-10-02 12:29:34 PM	Gathering partition schemes
+2023-10-02 12:29:34 PM	Gathering functions
+2023-10-02 12:29:34 PM	Gathering encrypted functions
+2023-10-02 12:29:34 PM	Gathering aggregates
+2023-10-02 12:29:34 PM	Gathering procedures
+2023-10-02 12:29:46 PM	Gathering encrypted procedures
+2023-10-02 12:29:46 PM	Gathering tables
+2023-10-02 12:29:47 PM	Gathering primary keys
+2023-10-02 12:29:47 PM	Gathering unique constraints
+2023-10-02 12:29:47 PM	Gathering foreign keys
+2023-10-02 12:29:47 PM	Gathering default constraints
+2023-10-02 12:29:47 PM	Gathering check constraints
+2023-10-02 12:29:47 PM	Gathering views
+2023-10-02 12:29:47 PM	Gathering encrypted views
+2023-10-02 12:29:47 PM	Gathering indexes
+2023-10-02 12:29:48 PM	Gathering statistics
+2023-10-02 12:29:48 PM	Gathering full-text index stoplists
+2023-10-02 12:29:48 PM	Gathering search property lists
+2023-10-02 12:29:48 PM	Gathering search properties
+2023-10-02 12:29:48 PM	Gathering full-text indexes
+2023-10-02 12:29:48 PM	Gathering column store indexes
+2023-10-02 12:29:48 PM	Gathering spatial indexes
+2023-10-02 12:29:48 PM	Gathering XML indexes
+2023-10-02 12:29:48 PM	Gathering Selective XML indexes
+2023-10-02 12:29:48 PM	Gathering encrypted triggers
+2023-10-02 12:29:48 PM	Gathering triggers
+2023-10-02 12:29:48 PM	Gathering encrypted and clr ddl triggers
+2023-10-02 12:29:48 PM	Gathering ddl triggers
+2023-10-02 12:29:48 PM	Gathering synonyms
+2023-10-02 12:29:48 PM	Gathering defaults
+2023-10-02 12:29:48 PM	Gathering data constraint uddt bindings
+2023-10-02 12:29:48 PM	Gathering rules
+2023-10-02 12:29:48 PM	Gathering data constraint uddt bindings
+2023-10-02 12:29:48 PM	Gathering message types
+2023-10-02 12:29:48 PM	Gathering queues
+2023-10-02 12:29:48 PM	Gathering contracts
+2023-10-02 12:29:48 PM	Gathering services
+2023-10-02 12:29:48 PM	Gathering event notifications
+2023-10-02 12:29:48 PM	Gathering remote service bindings
+2023-10-02 12:29:48 PM	Gathering broker priorities
+2023-10-02 12:29:48 PM	Gathering signatures
+2023-10-02 12:29:48 PM	Gathering data compression options
+2023-10-02 12:29:48 PM	Gathering sequence types
+2023-10-02 12:29:48 PM	Gathering security policies
+2023-10-02 12:29:48 PM	Gather column encryption keys
+2023-10-02 12:29:48 PM	Gathering column master keys
+2023-10-02 12:29:48 PM	Gathering external data sources
+2023-10-02 12:29:48 PM	Gathering external file formats
+2023-10-02 12:29:48 PM	Gathering external tables
+2023-10-02 12:29:48 PM	Gathering extended properties
+2023-10-02 12:29:48 PM	Gathering assemblies
+2023-10-02 12:29:55 PM	Gathering credentials
+2023-10-02 12:29:55 PM	Gathering logins
+2023-10-02 12:29:55 PM	Gathering server audits
+2023-10-02 12:30:01 PM	Scanning project for duplicate elements
+2023-10-02 12:30:02 PM	Finished duplicate element processing
+2023-10-02 12:30:31 PM	Finished importing database.
+2023-10-02 12:30:31 PM	A summary of the import was saved to the following location: D:\E-Drive\Project MFG\mfg_db_project\mfg_db\mfg_app\Import Schema Logs\mfg_app_20231002065905.log
+2023-10-02 12:30:31 PM	Click Finish to continue...
