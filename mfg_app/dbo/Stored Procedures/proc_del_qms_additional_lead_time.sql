@@ -9,7 +9,7 @@ begin
 	/*
 		Oct 21, 2019 - M2-2184 M - Add Quote Details items to the site preferences : DB
 	*/
-	-- testing 1
+	
 	declare @transaction_status					varchar(500) = 'Failed'
 	declare	@qms_lead_time_id		int
 

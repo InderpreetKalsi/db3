@@ -1,0 +1,14 @@
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\mfg_app\sql-scripts\mfg_app.dacpac
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\mfg_app\sql-scripts\mfg_app.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\mfg_app\sql-scripts\mfg_app.pdb
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\sql-scripts\mfg_app.dacpac
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\sql-scripts\mfg_app.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\sql-scripts\mfg_app.pdb
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\sql-scripts\master.dacpac
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\Model.xml
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\refactor.xml
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\postdeploy.sql
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\predeploy.sql
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\mfg_app.sqlproj.CopyComplete
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\mfg_app.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\obj\Debug\mfg_app.pdb

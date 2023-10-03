@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>D:\E-Drive\Project MFG\mfg_db_project\mfg_db\mfg_app\sql-scripts\</OutputPath>
+    <OutputPath>D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\mfg_app\sql-scripts\</OutputPath>
     <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DebugSymbols>true</DebugSymbols>
@@ -62,7 +62,6 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="tmp_trans\" />
     <Folder Include="tmp_trans\Tables\" />
-    <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
@@ -400,35 +399,6 @@
     <Build Include="dbo\Tables\wp_terms.sql" />
     <Build Include="dbo\Tables\mp_email_messages.sql" />
     <Build Include="dbo\Tables\mp_rfq_versions.sql" />
-    <Build Include="dbo\Views\vwRptMostRecentSuppliers.sql" />
-    <Build Include="dbo\Views\vwRptActiveSuppliers.sql" />
-    <Build Include="dbo\Views\vwRptMessageTrailBuyerToSupplier_AllMessages.sql" />
-    <Build Include="dbo\Views\vwRptQuotesBySupplier.sql" />
-    <Build Include="dbo\Views\vwRptSuppliersRFQsAndQuotesByProcesses.sql" />
-    <Build Include="dbo\Views\vwRptSurveys.sql" />
-    <Build Include="dbo\Views\vwRptRFQsCreatedPast90DaysWithSingleCapability.sql" />
-    <Build Include="dbo\Views\vwRptByMonthSupplierNewRegistrants.sql" />
-    <Build Include="dbo\Views\vwRptByMonthFreeManufacturers.sql" />
-    <Build Include="dbo\Views\vwRptByMonthRFQMetrics.sql" />
-    <Build Include="dbo\Views\vwRptByMonthBuyerRegistered.sql" />
-    <Build Include="dbo\Views\vwRptMessageTrailBuyerToSupplier.sql" />
-    <Build Include="dbo\Views\vwRptBuyerActivity.sql" />
-    <Build Include="dbo\Views\vw_get_company_territory_and_Capabilities.sql" />
-    <Build Include="dbo\Views\vw_rfq_getManufacturerGroup.sql" />
-    <Build Include="dbo\Views\vw_rfq_getRegisteredManufacturer.sql" />
-    <Build Include="dbo\Views\vw_rfq_message_count.sql" />
-    <Build Include="dbo\Views\vw_get_RFQ_Data.sql" />
-    <Build Include="dbo\Views\vwRptSupplierSavedSearchFilters.sql" />
-    <Build Include="dbo\Views\vw_address.sql" />
-    <Build Include="dbo\Views\vwRptRfqsByProcessAndPaidManufacturesLast90Days.sql" />
-    <Build Include="dbo\Views\vw_company_logo_and_profilepic.sql" />
-    <Build Include="dbo\Views\vwRptSupplierProfileViewed.sql" />
-    <Build Include="dbo\Views\vwRptActiveSuppliersWithAwardingDetails.sql" />
-    <Build Include="dbo\Views\vwRptByMonthSupplier.sql" />
-    <Build Include="dbo\Views\vwRptRfqsByProcessAndPaidManufacturesLast90DaysLWithLocation.sql" />
-    <Build Include="dbo\Views\vwRptRfqDetails.sql" />
-    <Build Include="dbo\Views\vwRptRFQsByMonth.sql" />
-    <Build Include="dbo\Views\vwRptRFQsCreatedPast90Days.sql" />
     <Build Include="Security\mfg_prod.sql" />
     <Build Include="Security\mfg_prod_1.sql" />
     <Build Include="Security\mfg_app_user.sql" />
@@ -800,5 +770,12 @@
     <Build Include="dbo\User Defined Types\tbltype_ListOfRfqStatuses.sql" />
     <Build Include="dbo\User Defined Types\tbltype_ListOfArchievedMessageIds.sql" />
     <Build Include="Security\tmp_trans.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>

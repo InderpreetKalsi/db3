@@ -1,0 +1,8 @@
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\hubspot\sql-scripts\hubspot.dacpac
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\hubspot\sql-scripts\hubspot.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db\hubspot\sql-scripts\hubspot.pdb
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\hubspot\sql-scripts\hubspot.dacpac
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\hubspot\sql-scripts\hubspot.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\hubspot\sql-scripts\hubspot.pdb
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\hubspot\obj\Debug\hubspot.dll
+D:\E-Drive\Project MFG\mfg_db_project\mfg_db - Copy\db3\hubspot\obj\Debug\hubspot.pdb

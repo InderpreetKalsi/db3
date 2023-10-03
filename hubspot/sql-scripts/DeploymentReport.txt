@@ -1,0 +1,60 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[HubSpotCompanies]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Number of Employees Text in table [dbo].[HubSpotCompanies] is currently  NVARCHAR (200) NULL but is
+         being changed to  NVARCHAR (100) NULL. Data loss could occur and deployment may fail if the column contains data that is
+         incompatible with type  NVARCHAR (100) NULL.
+       The column [dbo].[HubSpotContacts].[Stripe Customer ID] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[HubSpotCompanies].[IX_HubSpotCompanies_Email] (Index)
+       unnamed constraint on [dbo].[HubSpotCompanies] (Default Constraint)
+       unnamed constraint on [dbo].[HubSpotCompanies] (Default Constraint)
+     Create
+       [mfg_prod] (User)
+       [mfg_rpt_user] (User)
+       Role Membership: <unnamed> (Role Membership)
+       Role Membership: <unnamed> (Role Membership)
+       [dbo].[b2] (Table)
+       [dbo].[bk_hubspotcompanies_16_may_2023] (Table)
+       [dbo].[hubspot_sync_logs] (Table)
+       [dbo].[HubSpotAllEmails_20220225] (Table)
+       [dbo].[HubSpotContactsCreatedOrUpdatedLogs] (Table)
+       [dbo].[HubSpotContactsOneTimePull_Dec232021] (Table)
+       [dbo].[HubSpotErrorLogPushCompanies] (Table)
+       [dbo].[HubSpotErrorLogPushCompanies].[IX_HubSpotErrorLogPushCompanies_Vision_Company_Id] (Index)
+       [dbo].[HubSpotErrorLogPushContacts] (Table)
+       [dbo].[HubSpotErrorLogPushContacts].[IX_HubSpotErrorLogPushContacts_Vision_Contact_Id] (Index)
+       [dbo].[HubSpotRFQs_rk] (Table)
+       [dbo].[HubSpotUpSyncAPIRequestResponseLogs] (Table)
+       [dbo].[mst_discipline_level0] (Table)
+       [dbo].[mst_discipline_level1] (Table)
+       [dbo].[mst_manager_bk_duplicate_records] (Table)
+       [dbo].[mst_manufacturing_location] (Table)
+       [dbo].['portal 7872785$'] (Table)
+       [dbo].[t1] (Table)
+       Default Constraint: unnamed constraint on [dbo].[HubSpotContactsCreatedOrUpdatedLogs] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[HubSpotContactsCreatedOrUpdatedLogs] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[HubSpotErrorLogPushCompanies] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[HubSpotErrorLogPushContacts] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[HubSpotUpSyncAPIRequestResponseLogs] (Default Constraint)
+       [dbo].[proc_set_HubSpotContactsCreatedOrUpdatedLogs] (Procedure)
+       [dbo].[proc_set_HubSpotContactsCreatedOrUpdatedLogs_bk_18_Aug_2023] (Procedure)
+     Table rebuild
+       [dbo].[HubSpotCompanies] (Table)
+     Alter
+       [dbo].[HubSpotContacts] (Table)
+       [dbo].[HubSpotRFQs] (Table)
+
+** Supporting actions
+
+The object [rkarpe@delaPlex.com] already exists in database with a different definition and will not be altered.
+The type for column Number of Employees Text in table [dbo].[HubSpotCompanies] is currently  NVARCHAR (200) NULL but is being changed to  NVARCHAR (100) NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (100) NULL.
+The column [dbo].[HubSpotContacts].[Stripe Customer ID] is being dropped, data loss could occur.
+
